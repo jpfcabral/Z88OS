@@ -43,3 +43,19 @@ Author:
 Prof. Dr.-Ing. Frank Rieg  
 Department for engineering design and CAD  
 University Bayreuth - Germany
+
+# Compile in linux environments
+
+Flags for profiling was added to makefile, just run in terminal:
+
+`make`
+
+Then you can see the compiled file in `bin/unix64/z88r`
+
+To execute profiling analysis, run inside folder with related mesh files:
+
+`./z88r -c -siccg`
+
+Then:
+
+`gprof ./z88r | gprof2dot | dot -Tpng -o output.png`

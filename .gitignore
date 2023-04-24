@@ -3,3 +3,10 @@
 *.ko
 *.obj
 *.elf
+*.FCStd
+*.out
+*.log
+*.png
+
+build/
+data/
